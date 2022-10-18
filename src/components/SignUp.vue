@@ -30,10 +30,17 @@ export default {
       });
       console.warn(results);
       if ((results.status = 201)) {
-        alert("signup");
         localStorage.setItem("user-info", JSON.stringify(results.data));
+        this.$router.push({ name: "Home" });
       }
     },
+  },
+
+  mounted() {
+    let users = localStorage.getItem("user-info");
+    if (users) {
+      this.$router.push({ name: "Home" });
+    }
   },
 };
 </script>

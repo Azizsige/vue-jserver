@@ -1,22 +1,10 @@
 {
   "user": [
     {
-      "email": "aku@gmail.com",
-      "name": "Aku",
-      "password": "aku123",
+      "email": "spiderman@gmail.com",
+      "password": "spiderman123",
+      "name": "spiderman",
       "id": 1
-    },
-    {
-      "email": "mereka@gmail.com",
-      "password": "mereka123",
-      "name": "Mereka",
-      "id": 2
-    },
-    {
-      "email": "kita@gmail.com",
-      "password": "kita123",
-      "name": "Kita",
-      "id": 3
     }
   ]
 }
