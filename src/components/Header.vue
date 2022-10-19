@@ -4,16 +4,26 @@
       <li><a href="">Home</a></li>
       <li><a href="">Add Restaurant</a></li>
       <li><a href="">Update Restaurant</a></li>
-      <li><a href="">Logout</a></li>
+      <li><a @click="logout" href="">Logout</a></li>
     </ul>
   </div>
 </template>
 <script>
 export default {
   name: "Header",
+  methods: {
+    logout() {
+      localStorage.clear();
+      this.$router.push({ name: "Login" });
+    },
+  },
 };
 </script>
 <style>
+body {
+  min-height: 0;
+}
+
 .container-list {
   background-color: #f1f1f1;
   width: 100%;
