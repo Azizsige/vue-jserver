@@ -7,6 +7,9 @@
       <input v-model="password" type="password" placeholder="Enter Password" />
       <button type="submit">Login</button>
     </div>
+    <p>
+      <router-link to></router-link>
+    </p>
   </div>
 </template>
 <script>
