@@ -17,6 +17,12 @@
       "password": "kamu123",
       "name": "kamu",
       "id": 3
+    },
+    {
+      "email": "kami@gmail.com",
+      "password": "kami123",
+      "name": "kami",
+      "id": 4
     }
   ]
 }
