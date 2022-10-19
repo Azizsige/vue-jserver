@@ -1,9 +1,9 @@
 <template>
   <div class="container-list">
     <ul class="list">
-      <li><a href="">Home</a></li>
-      <li><a href="">Add Restaurant</a></li>
-      <li><a href="">Update Restaurant</a></li>
+      <li><router-link to="/">Home</router-link></li>
+      <li><router-link to="/add">Add Restaurant</router-link></li>
+      <li><router-link to="/update">Update Restaurant</router-link></li>
       <li><a @click="logout" href="">Logout</a></li>
     </ul>
   </div>

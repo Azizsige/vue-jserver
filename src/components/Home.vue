@@ -5,18 +5,27 @@
   </div>
 </template>
 <script>
+import axios from "axios";
 import Header from "./Header.vue";
 export default {
   name: "Home",
   components: {
     Header,
   },
-  mounted() {
+
+  async mounted() {
     let users = localStorage.getItem("user-info");
     if (!users) {
       this.$router.push({ name: "SignUp" });
     }
+
+    let results = await axios.get("http://localhost:3000/restaurants");
+    console.warn(results);
   },
 };
 </script>
-<style></style>
+<style>
+body {
+  min-height: 0;
+}
+</style>

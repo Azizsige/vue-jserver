@@ -15,6 +15,10 @@ export default {
 };
 </script>
 <style>
+body {
+  min-height: 0;
+}
+
 .logo {
   width: 100px;
 }

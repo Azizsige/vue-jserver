@@ -24,5 +24,31 @@
       "name": "kami",
       "id": 4
     }
+  ],
+  "restaurants": [
+    {
+      "id": 1,
+      "name": "KFC",
+      "contact": "1234567890",
+      "address": "KFC, 123, ABC, XYZ"
+    },
+    {
+      "name": "McDonalds",
+      "id": 2,
+      "contact": "1234567890",
+      "address": "McDonalds, 123, ABC, XYZ"
+    },
+    {
+      "id": 3,
+      "name": "Burger King",
+      "contact": "1234567890",
+      "address": "Burger King, 123, ABC, XYZ"
+    },
+    {
+      "id": 4,
+      "name": "Pizza Hut",
+      "contact": "1234567890",
+      "address": "Pizza Hut, 123, ABC, XYZ"
+    }
   ]
 }

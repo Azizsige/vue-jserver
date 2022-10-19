@@ -47,4 +47,8 @@ export default {
   },
 };
 </script>
-<style></style>
+<style>
+body {
+  min-height: 100vh;
+}
+</style>
