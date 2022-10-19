@@ -5,6 +5,18 @@
       "password": "spiderman123",
       "name": "spiderman",
       "id": 1
+    },
+    {
+      "email": "dia@gmail.com",
+      "password": "dia123",
+      "name": "dia",
+      "id": 2
+    },
+    {
+      "email": "kamu@gmail.com",
+      "password": "kamu123",
+      "name": "kamu",
+      "id": 3
     }
   ]
 }

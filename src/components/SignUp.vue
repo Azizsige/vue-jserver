@@ -31,11 +31,11 @@ export default {
         password: this.password,
         name: this.name,
       });
-      // console.warn(results);
-      // if ((results.status = 201)) {
-      //   localStorage.setItem("user-info", JSON.stringify(results.data));
-      //   this.$router.push({ name: "Home" });
-      // }
+      console.warn(results);
+      if ((results.status = 201)) {
+        localStorage.setItem("user-info", JSON.stringify(results.data));
+        this.$router.push({ name: "Home" });
+      }
     },
   },
 
