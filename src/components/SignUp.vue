@@ -8,6 +8,9 @@
       <input v-model="password" type="password" placeholder="Enter Password" />
       <button @click="signUp" type="submit">Sign Up</button>
     </div>
+    <p>
+      <router-link to="/login">Login</router-link>
+    </p>
   </div>
 </template>
 <script>
@@ -28,11 +31,11 @@ export default {
         password: this.password,
         name: this.name,
       });
-      console.warn(results);
-      if ((results.status = 201)) {
-        localStorage.setItem("user-info", JSON.stringify(results.data));
-        this.$router.push({ name: "Home" });
-      }
+      // console.warn(results);
+      // if ((results.status = 201)) {
+      //   localStorage.setItem("user-info", JSON.stringify(results.data));
+      //   this.$router.push({ name: "Home" });
+      // }
     },
   },
 
@@ -44,26 +47,4 @@ export default {
   },
 };
 </script>
-<style>
-.logo {
-  width: 100px;
-}
-
-.register input {
-  width: 300px;
-  height: 40px;
-  padding-left: 20px;
-  display: block;
-  margin: 0 auto 30px auto;
-  border: 1px solid skyblue;
-}
-
-.register button {
-  width: 320px;
-  height: 40px;
-  border: 1px solid skyblue;
-  background-color: skyblue;
-  color: #fff;
-  cursor: pointer;
-}
-</style>
+<style></style>
