@@ -26,11 +26,18 @@ export default {
   },
   methods: {
     async signUp() {
-      let results = await axios.post("http://localhost:3000/user", {
-        email: this.email,
-        password: this.password,
-        name: this.name,
-      });
+      let results = await axios.all([
+        axios.post("http://localhost:3000/user", {
+          email: this.email,
+          password: this.password,
+          name: this.name,
+        }),
+        axios.post("https://azizsige.github.io/vue-jserver/db/db.json", {
+          email: this.email,
+          password: this.password,
+          name: this.name,
+        }),
+      ]);
       console.warn(results);
       if ((results.status = 201)) {
         localStorage.setItem("user-info", JSON.stringify(results.data));

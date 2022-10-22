@@ -23,6 +23,12 @@
       "password": "kami123",
       "name": "kami",
       "id": 4
+    },
+    {
+      "email": "coba01@gmail.com",
+      "password": "coba1234",
+      "name": "coba01",
+      "id": 5
     }
   ],
   "restaurants": [
