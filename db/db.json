@@ -29,6 +29,36 @@
       "password": "coba1234",
       "name": "coba01",
       "id": 5
+    },
+    {
+      "email": "dummy01@gmail.com",
+      "password": "dummy1234",
+      "name": "dummy01",
+      "id": 6
+    },
+    {
+      "email": "test02@gmail.com",
+      "password": "test123",
+      "name": "test02",
+      "id": 7
+    },
+    {
+      "email": "kakak@gmail.com",
+      "password": "kakak123",
+      "name": "kakak",
+      "id": 8
+    },
+    {
+      "email": "haha@gmail.com",
+      "password": "haha123",
+      "name": "haha",
+      "id": 9
+    },
+    {
+      "email": "hahahah@gmail.com",
+      "password": "hahah123",
+      "name": "hahahah",
+      "id": 10
     }
   ],
   "restaurants": [

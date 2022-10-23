@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="signup-wrapper">
     <img class="logo" src="./../assets/vue.svg" alt="" srcset="" />
     <h1>Sign Up</h1>
     <div class="register">
@@ -26,18 +26,11 @@ export default {
   },
   methods: {
     async signUp() {
-      let results = await axios.all([
-        axios.post("http://localhost:3000/user", {
-          email: this.email,
-          password: this.password,
-          name: this.name,
-        }),
-        axios.post("https://azizsige.github.io/vue-jserver/db/db.json", {
-          email: this.email,
-          password: this.password,
-          name: this.name,
-        }),
-      ]);
+      let results = await axios.post("http://localhost:3000/user", {
+        email: this.email,
+        password: this.password,
+        name: this.name,
+      });
       console.warn(results);
       if ((results.status = 201)) {
         localStorage.setItem("user-info", JSON.stringify(results.data));
@@ -55,7 +48,11 @@ export default {
 };
 </script>
 <style>
-body {
+.signup-wrapper {
   min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 </style>

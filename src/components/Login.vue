@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="login-wrapper">
     <img class="logo" src="./../assets/vue.svg" alt="" srcset="" />
     <h1>Login</h1>
     <div class="login">
@@ -46,6 +46,14 @@ export default {
 </script>
 <style>
 body {
-  min-height: 100vh !important;
+  min-height: 100vh;
+}
+
+.login-wrapper {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 </style>
