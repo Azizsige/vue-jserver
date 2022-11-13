@@ -3,7 +3,6 @@
     <ul class="list">
       <li><router-link to="/">Home</router-link></li>
       <li><router-link to="/add">Add Restaurant</router-link></li>
-      <li><router-link to="/update">Update Restaurant</router-link></li>
       <li><a @click="logout" href="">Logout</a></li>
     </ul>
   </div>

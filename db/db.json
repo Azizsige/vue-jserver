@@ -59,15 +59,15 @@
       "password": "hahah123",
       "name": "hahahah",
       "id": 10
+    },
+    {
+      "email": "aziz@gmail.com",
+      "password": "123456",
+      "name": "aziz",
+      "id": 11
     }
   ],
   "restaurants": [
-    {
-      "id": 1,
-      "name": "KFC",
-      "contact": "1234567890",
-      "address": "KFC, 123, ABC, XYZ"
-    },
     {
       "name": "McDonalds",
       "id": 2,
@@ -75,16 +75,16 @@
       "address": "McDonalds, 123, ABC, XYZ"
     },
     {
-      "id": 3,
-      "name": "Burger King",
-      "contact": "1234567890",
-      "address": "Burger King, 123, ABC, XYZ"
+      "name": "minyak",
+      "address": "update",
+      "contact": "Update nih",
+      "id": 5
     },
     {
-      "id": 4,
-      "name": "Pizza Hut",
-      "contact": "1234567890",
-      "address": "Pizza Hut, 123, ABC, XYZ"
+      "name": "Bebek Purnama",
+      "address": "Siwalankerto Timur",
+      "contact": "112233",
+      "id": 6
     }
   ]
 }
