@@ -45,7 +45,7 @@ export default {
   methods: {
     async update() {
       const results = await axios.put(
-        `http://localhost:3000/restaurants/${this.$route.params.id}`,
+        `https://jserver-restaurant.herokuapp.com/restaurants/${this.$route.params.id}`,
         {
           name: this.restaurants.name,
           address: this.restaurants.address,
@@ -65,7 +65,7 @@ export default {
     }
 
     const results = await axios.get(
-      `http://localhost:3000/restaurants/${this.$route.params.id}`
+      `https://jserver-restaurant.herokuapp.com/restaurants/${this.$route.params.id}`
     );
 
     this.restaurants = results.data;

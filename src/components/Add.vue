@@ -44,11 +44,14 @@ export default {
   },
   methods: {
     async add() {
-      const results = await axios.post("http://localhost:3000/restaurants/", {
-        name: this.restaurants.name,
-        address: this.restaurants.address,
-        contact: this.restaurants.contact,
-      });
+      const results = await axios.post(
+        "https://jserver-restaurant.herokuapp.com/restaurants/",
+        {
+          name: this.restaurants.name,
+          address: this.restaurants.address,
+          contact: this.restaurants.contact,
+        }
+      );
       if (results.status == 201) {
         this.$router.push({ name: "Home" });
       }

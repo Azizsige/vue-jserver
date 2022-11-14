@@ -6,14 +6,12 @@
     <div class="table">
       <table border="1">
         <tr>
-          <td>No.</td>
           <td>Nama</td>
           <td>Kontak</td>
           <td>Alamat</td>
           <td>Action</td>
         </tr>
         <tr v-for="data in restaurants" :key="data.id">
-          <td>{{ data.id }}</td>
           <td>{{ data.name }}</td>
           <td>{{ data.contact }}</td>
           <td>{{ data.address }}</td>
@@ -37,13 +35,14 @@ export default {
   data() {
     return {
       restaurants: [],
+      no: 1,
     };
   },
 
   methods: {
     async deleteData(id) {
       const results = await axios.delete(
-        `http://localhost:3000/restaurants/${id}`
+        `https://jserver-restaurant.herokuapp.com/restaurants/${id}`
       );
       console.log(results);
       if (results.status == 200) {
@@ -56,7 +55,9 @@ export default {
       if (!users) {
         this.$router.push({ name: "SignUp" });
       }
-      let results = await axios.get("http://localhost:3000/restaurants");
+      let results = await axios.get(
+        "https://jserver-restaurant.herokuapp.com/restaurants"
+      );
       this.restaurants = results.data;
     },
   },
