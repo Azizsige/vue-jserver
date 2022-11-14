@@ -13,7 +13,7 @@ export default {
   methods: {
     logout() {
       localStorage.clear();
-      this.$router.push({ name: "SignUp" });
+      this.$router.push({ name: "Home" });
     },
   },
 };
