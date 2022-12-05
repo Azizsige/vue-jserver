@@ -27,7 +27,7 @@ export default {
   methods: {
     async signUp() {
       let results = await axios.post(
-        "https://jserver-restaurant.herokuapp.com/user",
+        "https://jserver-restaurant.vercel.app/user",
         {
           email: this.email,
           password: this.password,
