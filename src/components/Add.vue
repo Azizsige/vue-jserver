@@ -45,7 +45,7 @@ export default {
   methods: {
     async add() {
       const results = await axios.post(
-        "https://jserver-restaurant.herokuapp.com/restaurants/",
+        "https://jserver-restaurant.vercel.app/restaurants/",
         {
           name: this.restaurants.name,
           address: this.restaurants.address,
