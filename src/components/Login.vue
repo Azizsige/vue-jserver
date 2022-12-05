@@ -26,7 +26,7 @@ export default {
   methods: {
     async login() {
       let results = await axios.get(
-        `https://jserver-restaurant.herokuapp.com/user?email=${this.email}&password=${this.password}`
+        `https://jserver-restaurant.vercel.app/user?email=${this.email}&password=${this.password}`
       );
       if ((results.status = 200 && results.data.length > 0)) {
         localStorage.setItem("user-info", JSON.stringify(results.data));
