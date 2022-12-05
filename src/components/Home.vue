@@ -42,7 +42,7 @@ export default {
   methods: {
     async deleteData(id) {
       const results = await axios.delete(
-        `https://jserver-restaurant.herokuapp.com/restaurants/${id}`
+        `https://jserver-restaurant.vercel.app/restaurants/${id}`
       );
       console.log(results);
       if (results.status == 200) {
@@ -56,7 +56,7 @@ export default {
         this.$router.push({ name: "SignUp" });
       }
       let results = await axios.get(
-        "https://jserver-restaurant.herokuapp.com/restaurants"
+        "https://jserver-restaurant.vercel.app/restaurants"
       );
       this.restaurants = results.data;
     },
